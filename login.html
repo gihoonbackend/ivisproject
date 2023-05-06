@@ -1,0 +1,42 @@
+ <head>
+    <link rel="stylesheet" href="login.css"/>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+</head>
+
+<body>
+    <div class="login-wrapper">
+        <h2>자율주행 관제 시스템</h2>
+        <form id="login-form" action="post">
+
+            <input type="text"  
+            id="userName" 
+            class="form-control"
+            placeholder="ID"  >
+
+            <input type="password" 
+            id="userPassword" 
+            class="form-control"
+            placeholder="Password" >
+
+            <button type="submit" 
+                     class="btn btn-outline-success btn-lg shadow" 
+                     onClick="auth(event)">Login</button>
+         </form>
+         <script>
+            function auth(event) {
+                  event.preventDefault();
+        
+                  var userName = document.getElementById("userName").value;
+                  var userPassword = document.getElementById("userPassword").value;
+        
+                  if (userName === "root" && userPassword === "pass") {
+                       window.location.replace("main.html");
+                  } else {
+                      alert("Invalid information");
+                      return;
+                  }
+            }
+         </script> 
+    </div>
+</body>

@@ -1,0 +1,169 @@
+@import "reset.css";
+
+body{
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #20202B;
+}
+
+/*헤더 표시되는 것들*/
+header{
+	background-color:#3D4047;
+	height: 50px;
+	color: #F0F2F6;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 50px;
+}
+#inu_image{
+	margin-top: 10px;
+	margin-right: 10px;
+	height: 30px;
+	width: 50px;
+	float: left;
+}
+#date{
+	font-size: small;
+	color: #999999;
+}
+#logout{
+	background-color: #3D4047;
+	border:none;
+	float: right;
+	color: #F0F2F6;
+	margin-top: 15px;
+	margin-right:5px;
+	width: fit-content;
+	font-size: medium;
+}
+
+/*main 표시되는 것들*/
+main{
+	height: 92%;
+	display: flex;
+}
+
+/*왼쪽 화면에 표시되는 것들*/
+.Left{
+	background-color: #3D4047;
+	flex-basis: 170px;
+	float: center;
+	margin: 10px;
+}
+
+#vehicle > button{
+    width: 90%;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 6px;
+	margin: 10px;
+	color: #3D4047;
+    text-align: center;
+	letter-spacing: 1px;
+	font-size: x-large;
+    background-color: #F0F2F6;
+    font-weight: bold;
+}
+
+#vehicle {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+
+/*중앙 화면에 표시되는 것들*/
+.Center{
+	background-color: #20202B;
+	flex-basis: 1000px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#map_pic{
+	height: 70%;
+}
+
+
+#map_text{
+	background-color: #3D4047;
+	height: 30%;
+	text-align:left;
+	color:#E6E7E9;
+}
+
+td {
+    padding-right: 20px;
+}
+
+#map_text_title{
+	text-align: left;
+	height: 20%;
+	background-color: #E6E7E9;
+	color:#20202B;
+	font-weight: bold;
+	font-size: medium;
+}
+
+/*오른쪽 화면에 표시되는 것들*/
+.Right{
+	background-color: #3D4047;
+	flex: 1;
+	float: center;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+/*footer 표시되는 것들*/
+footer {
+	height: 2%;
+	text-align: center;
+	clear:both;
+	
+}
+/*오른쪽 화면에 표시되는 것들*/
+.Right{
+	background-color: #3D4047;
+	flex: 1;
+	float: center;
+	margin: 10px;
+	border-radius: 15px;
+ }
+#car-space{
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 1px;
+	color:#E6E7E9;
+	font-size: xx-large;
+	font-weight: bold;
+	margin: 80px;
+  }
+
+ #btn_ctrl > button{
+    width: 90%;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 6px;
+	margin: 20px;
+    background-color: #fcb10f;
+    text-align: center;
+	letter-spacing: 1px;
+	font-size: x-large;
+    color: #3D4047;
+    font-weight: bold;
+}
+
+#btn_ctrl {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 520px;
+  }
+
